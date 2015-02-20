@@ -88,7 +88,8 @@ results in a package.json file in the root of our cwd:
 Having the package file means that we don't have to include `./node_modules` in our code repository, making it easier to share. When someone else wants to use this tool, the would simply checkout the repository and run `npm install` in the root; all specified package dependencies will be downloaded. The only thing we'll manually update for the time being is the test key - we don't want to fail our build just because we didn't specify a test. Change the following: `"test": "echo \"Error: no test specified\" && exit 1"` => `"test": "echo \"Warning: no test specified\" && exit 0"`
 
 Local Node Modules:
- * [Gulp](http://gulpjs.com/) because we need it locally too `npm install --save-dev gulp`
+  * [Gulp](http://gulpjs.com/) because we need it locally too `npm install --save-dev gulp`
+  * [Bower](http://bower.io/) we want it locally in case a user doesn't have it installed globally `npm install --save bower`
 
 Other modules for things we want to do:
   * Compile our Sass files
