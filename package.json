@@ -1,0 +1,25 @@
+{
+  "name": "frontend-build-tool",
+  "version": "0.0.1",
+  "description": "Does everything we want to automate for my frontend build process.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThatGuyCND/frontend-build-tool"
+  },
+  "keywords": [
+    "gulp",
+    "automation",
+    "frontend",
+    "sass"
+  ],
+  "author": "Erik Baldwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThatGuyCND/frontend-build-tool/issues"
+  },
+  "homepage": "https://github.com/ThatGuyCND/frontend-build-tool"
+}
