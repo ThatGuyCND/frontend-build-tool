@@ -14,6 +14,7 @@ gulp.task('styles', function () {
   var sassSettings = {
     loadPath: [
       './src/styles'
+      './src/bower_components'
     ],
     require: 'compass/import-once/activate',
     style: 'expanded',
