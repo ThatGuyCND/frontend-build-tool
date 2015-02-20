@@ -4,7 +4,8 @@
 var gulp        = require('gulp'),
     rubySass    = require('gulp-ruby-sass'), // Ruby-Sass because reasons ...
     autoPrefix  = require('gulp-autoprefixer'),
-    concat      = require('gulp-concat');
+    concat      = require('gulp-concat')
+    uglify      = require('gulp-uglify');
 
 // Let's create a task that processes our sass and scss files.
 gulp.task('styles', function () {
@@ -31,5 +32,6 @@ gulp.task('scripts', function () {
   // Now we need to concat all of our script files into one
   gulp.src('./src/scripts/**/*.js')
     .pipe(concat('my-scripts.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/scripts'));
 });

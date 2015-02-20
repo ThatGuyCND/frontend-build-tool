@@ -9,6 +9,10 @@
 ```bash
 $ brew install rbenv ruby-build
 ```
+  * :gem: Install Required Gems
+  ```bash
+  bundle install
+  ```
 * :beer: Homebrew
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -98,3 +102,5 @@ Other modules for things we want to do:
     * [Gulp Autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) `=> $ npm install --save-dev gulp-autoprefixer`
   * Concat multiple files into one
     * [Gulp Concat](https://github.com/wearefractal/gulp-concat) `=> $ npm install --save-dev gulp-concat`
+  * Minify/Uglify our scripts
+    * [Gulp Uglify](https://www.npmjs.com/package/gulp-uglify) `=> $ npm install --save-dev gulp-uglify`
