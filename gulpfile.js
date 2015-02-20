@@ -4,7 +4,7 @@
 var gulp        = require('gulp'),
     rubySass    = require('gulp-ruby-sass'), // Ruby-Sass because reasons ...
     autoPrefix  = require('gulp-autoprefixer'),
-    concat      = require('gulp-concat')
+    concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify');
 
 // Let's create a task that processes our sass and scss files.
@@ -35,3 +35,5 @@ gulp.task('scripts', function () {
     .pipe(uglify())
     .pipe(gulp.dest('./dist/scripts'));
 });
+
+gulp.task('default', ['styles', 'scripts']);
