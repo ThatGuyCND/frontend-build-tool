@@ -1,0 +1,26 @@
+{
+  "name": "frontend-build-tool",
+  "version": "0.0.1",
+  "description": "Does what I want it to",
+  "homepage": "https://github.com/ThatGuyCND/frontend-build-tool",
+  "authors": [
+    "Erik Baldwin <erik.baldwin@acquia.com>"
+  ],
+  "keywords": [
+    "gulp automation"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.2",
+    "modernizr": "~2.8.3"
+  }
+}
